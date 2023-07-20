@@ -1,0 +1,18 @@
+.cart-menu {
+    position: absolute;
+    top: 30px;
+    left: -300px;
+    background-color: rgb(36, 37, 41);
+    width: 400px;
+    z-index: 100;
+    padding: 10px;
+}
+
+.cart-menu__games-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.cart-menu__total{
+    border-top: 1px solid white;
+}

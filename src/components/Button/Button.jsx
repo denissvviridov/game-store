@@ -1,13 +1,14 @@
 import React from 'react';
 import classNames from "classnames";
 import {type} from "@testing-library/user-event/dist/type";
-
-const Button = ({onClick, ype, children, size = 's'}) => {
+import './Button.css'
+const Button = ({onClick, type, children, size = 's'}) => {
     const btnClass = classNames({
         'btn': true,
         'btn--secondary': type === 'secondary',
-        'btn--small': type === 's',
-        'btn--medium': type === 'm',
+        'btn--primary': type === 'primary',
+        'btn--small': size === 's',
+        'btn--medium': size=== 'm',
     })
 
     return (
